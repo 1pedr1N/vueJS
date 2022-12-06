@@ -1,5 +1,14 @@
 <template>
-  <h1>legal</h1>
+  <NavBar />
+  <router-view />
 </template>
-
+<script>
+import NavBar from "./components/Navbar.vue";
+export default {
+  name: "App",
+  components: {
+    NavBar,
+  },
+};
+</script>
 <style scoped></style>
