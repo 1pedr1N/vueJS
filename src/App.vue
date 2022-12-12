@@ -1,5 +1,5 @@
 <template>
-  <NavBar />
+  <NavBar :logo="logo_src" :alt="app_name" />
   <router-view />
   <FooterApp />
 </template>
@@ -12,6 +12,12 @@ export default {
     NavBar,
     FooterApp,
   },
+  data(){
+    return{
+      logo_src: "/images/logo.png",
+      app_name: "Make Your Burguer"
+    }
+  }
 };
 </script>
 <style scoped></style>
