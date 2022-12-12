@@ -1,11 +1,5 @@
-
 <template>
-  <main>
-<h1>ok</h1>
-  </main>
+  <div class="main-container">
+    <h1>Pedidos</h1>
+  </div>
 </template>
-<script setup>
-
-
-
-</script>
