@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar :logo="logo_src" :alt="app_name" />
+    <Navbar :logo="logo_src" :alt="app_name" />
     <div>
       <router-view></router-view>
     </div>
@@ -8,22 +8,22 @@
   </div>
 </template>
 <script>
-import NavBar from "./components/Navbar.vue";
-import FooterApp from "./components/FooterApp.vue";
+import Navbar from './components/NavBar.vue'
+import FooterApp from './components/FooterApp.vue'
 export default {
-  name: "App",
-  components: {
-    NavBar,
-    FooterApp,
-  },
-  data() {
+  data: function () {
     return {
       logo_src: "/images/logo.png",
-      app_name: "Make Your Burguer",
-    };
+      app_name: "Make Your Burger"
+    }
   },
-};
+  components: {
+    Navbar,
+    FooterApp
+  }
+}
 </script>
+
 <style>
 * {
   font-family: Helvetica;
@@ -31,10 +31,12 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+
 .main-container {
   margin: 50px;
   min-height: 250px;
 }
+
 h1 {
   text-align: center;
   font-size: 42px;
