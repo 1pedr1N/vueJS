@@ -13,19 +13,19 @@ export default {
 };
 </script>
 <style scoped>
-#nav{
+#nav {
   background-color: #222;
   border-bottom: 4px solid #111;
   padding: 15px 50px;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
 }
-#nav #logo-url{
+#nav #logo-url {
   margin: auto;
   margin-left: 0;
 }
-#logo{
+#logo {
   width: 40px;
   height: 40px;
 }
@@ -34,8 +34,7 @@ export default {
   text-decoration: none;
   margin: 12px;
 }
-#nav a:hover{
-  color:#fff;
+#nav a:hover {
+  color: #fff;
 }
-
 </style>
