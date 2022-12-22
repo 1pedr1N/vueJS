@@ -29,12 +29,22 @@
                 <option value="carne3">Bem Passada</option>
             </select>
         </div>
-        <div class="input-container">
-            <label for="opcionais">Escolha sua opcionais:</label>
-    <div class="checkbox-container">
-        <input type="checkbox" name="opcionais" v-model='opcionais' value="salame">
-        <span>salame</span>
-    </div>
+        <div class="input-container" id="option">
+            <label for="opcionais" id="option-ttl" >Escolha sua opcionais:</label>
+ 
+      
+        <div class="checkbox-container">
+          <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
+          <span>salame</span>
+        </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
+            <span>salame</span>
+          </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
+              <span>salame</span>
+            </div>
         </div>
         <div class="input-container">
             <input type="submit" class="sbm-btn" value="Criar meu hamburguer"/>
@@ -49,4 +59,62 @@ export default {
   name: "FormApp",
 };
 </script>
-<style scoped></style>
+<style scoped>
+#burguer-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+label {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #222;
+  padding: 5px 10px;
+  border-left: 4px solid #fcba03;
+}
+input,
+select {
+  padding: 5px 10px;
+  width: 300px;
+}
+#option {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#option-ttl {
+  width: 100%;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.checkbox-container span,
+.checkbox-container input {
+  width: auto;
+}
+.checkbox-container span {
+  margin-left: 6px;
+  font-weight: bold;
+}
+.sbm-btn {
+  background-color: #222;
+  color: #fcba03;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin:0 auto;
+}
+.sbm-btn:hover {
+  background-color: #fcba03;
+  color: #222;
+}
+</style>
