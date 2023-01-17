@@ -16,35 +16,24 @@
       <div class="input-container">
         <label for="pao">Escolha seu Pão:</label>
         <select id="pao" name="pao" v-model="pao">
-          <option value="pao1">Pão Agridoce</option>
-          <option value="pao2">Pão Baguete</option>
-          <option value="pao3">Pão Queijo</option>
+          <option :value="pao.tipo" v-for="pao in paes" :key="pao.id" >{{ pao.tipo }} </option>
+   
         </select>
       </div>
         <div class="input-container">
             <label for="carne">Escolha sua Carne:</label>
             <select id="carne" name="carne" v-model="pao">
-                <option value="carne1">Ao Ponto</option>
-                <option value="carne2">Mal Passada</option>
-                <option value="carne3">Bem Passada</option>
+              <option :value="carne.tipo" v-for="carne in carnes" :key="carne.id">{{ carne.tipo }} </option>
             </select>
         </div>
         <div class="input-container" id="option">
             <label for="opcionais" id="option-ttl" >Escolha sua opcionais:</label>
  
       
-        <div class="checkbox-container">
-          <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
-          <span>salame</span>
+        <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id" >
+          <input type="checkbox" name="opcionais" v-model='opcionais' :value="opcional.tipo" class="checkbox-inpt">
+          <span>{{ opcional.tipo }} </span>
         </div>
-          <div class="checkbox-container">
-            <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
-            <span>salame</span>
-          </div>
-            <div class="checkbox-container">
-              <input type="checkbox" name="opcionais" v-model='opcionais' value="salame" class="checkbox-inpt">
-              <span>salame</span>
-            </div>
         </div>
         <div class="input-container">
             <input type="submit" class="sbm-btn" value="Criar meu hamburguer"/>
@@ -57,6 +46,32 @@
 <script>
 export default {
   name: "FormApp",
+  data(){
+    return{
+      paes: null,
+      carnes: null,
+      opcionaisdata: [],
+      nome:null,
+      pao:null,
+      carne:null,
+      opcionais:[],
+      status:'Solicitado',
+      msg:null,
+    }
+  },
+  methods:{
+    async getIngredients(){
+      const req = await fetch('http://localhost:3001/ingredientes');
+ const data = await req.json();
+     this.paes = data.paes;
+      this.carnes = data.carnes;
+      this.opcionaisdata = data.opcionais;
+      
+    }
+  },
+  mounted(){
+    this.getIngredients()
+  }
 };
 </script>
 <style scoped>
