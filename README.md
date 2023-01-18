@@ -2,40 +2,17 @@
 
 I did this project for learning about vuejs. star pls <3
 
-## Recommended IDE Setup
+### This is a simple project but it's nice to learn vuejs
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+I did one website who you can order your hamburguer, it's so funny!
 
-## Customize configuration
+### I have some site pics, lets see
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<img src='./public/images/foto.png' alt='foto' width='500px'>
+<div marginTop='100px'>
+<img src='./public/images/foto2.png' alt='foto' width='500px'>
+</div>
 
-## Project Setup
+### It's nice, and verry funny VueJS!
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+see you soon
