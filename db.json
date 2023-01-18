@@ -77,5 +77,248 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Pedro Henrique Silva",
+      "pao": "3 Queijos",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 1
+    },
+    {
+      "nome": "awda",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 2
+    },
+    {
+      "nome": "awda",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 3
+    },
+    {
+      "nome": "awda",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 4
+    },
+    {
+      "nome": "awda",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 5
+    },
+    {
+      "nome": "awda",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 6
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 7
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 8
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 9
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 10
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 11
+    },
+    {
+      "nome": "awdaawdadaw",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "msg": "Erro ao criar hamburguer!",
+      "id": 12
+    },
+    {
+      "nome": "Pedro Henrique Silva de Morais",
+      "pao": "3 Queijos",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 13
+    },
+    {
+      "nome": "",
+      "pao": "",
+      "carne": "",
+      "opcionais": [
+        "Pepino",
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "msg": "",
+      "id": 14
+    },
+    {
+      "nome": null,
+      "pao": null,
+      "carne": null,
+      "opcionais": [],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 15
+    },
+    {
+      "nome": "wadad",
+      "pao": "Integral",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "msg": "",
+      "id": 16
+    },
+    {
+      "nome": "Pedro Silva",
+      "pao": "Parmesão e Orégano",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 17
+    },
+    {
+      "nome": "dawda",
+      "pao": "3 Queijos",
+      "carne": "Maminha",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "msg": null,
+      "id": 18
+    },
+    {
+      "nome": "",
+      "pao": "",
+      "carne": "",
+      "opcionais": [],
+      "status": "Solicitado",
+      "msg": "Pedido Realizado Com Sucesos",
+      "id": 19
+    },
+    {
+      "nome": "Pedro Henrique Silva",
+      "pao": "Parmesão e Orégano",
+      "carne": "Veggie burger",
+      "opcionais": [
+        "Cebola roxa",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "msg": "",
+      "id": 20
+    },
+    {
+      "nome": "",
+      "pao": "Parmesão e Orégano",
+      "carne": "Picanha",
+      "opcionais": [
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "msg": "",
+      "id": 21
+    }
+  ]
 }

@@ -1,8 +1,10 @@
 <!-- eslint-disable prettier/prettier -->
+<!-- eslint-disable prettier/prettier -->
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div class="main-container">
-    <p>Componente de Mensagem</p>
-    <form id="burguer-form">
+<MessageApp :msg="msg" v-show="msg" />
+    <form id="burguer-form" @submit="createBurguer">
       <div class="input-container">
         <label for="name">Nome do Cliente</label>
         <input
@@ -22,7 +24,7 @@
       </div>
         <div class="input-container">
             <label for="carne">Escolha sua Carne:</label>
-            <select id="carne" name="carne" v-model="pao">
+            <select id="carne" name="carne" v-model="carne">
               <option :value="carne.tipo" v-for="carne in carnes" :key="carne.id">{{ carne.tipo }} </option>
             </select>
         </div>
@@ -44,34 +46,67 @@
 </template>
 
 <script>
+import MessageApp from "./Message.vue";
 export default {
   name: "FormApp",
-  data(){
-    return{
+  data() {
+    return {
       paes: null,
       carnes: null,
       opcionaisdata: [],
-      nome:null,
-      pao:null,
-      carne:null,
-      opcionais:[],
-      status:'Solicitado',
-      msg:null,
-    }
+      nome: null,
+      pao: null,
+      carne: null,
+      opcionais: [],
+
+      msg: null,
+    };
   },
-  methods:{
-    async getIngredients(){
-      const req = await fetch('http://localhost:3001/ingredientes');
- const data = await req.json();
-     this.paes = data.paes;
+  methods: {
+    async getIngredients() {
+      const req = await fetch("http://localhost:3001/ingredientes");
+      const data = await req.json();
+      this.paes = data.paes;
       this.carnes = data.carnes;
       this.opcionaisdata = data.opcionais;
-      
-    }
+    },
+    async createBurguer(e) {
+      e.preventDefault();
+      const data = {
+        nome: this.nome,
+        pao: this.pao,
+        carne: this.carne,
+        opcionais: Array.from(this.opcionais),
+        status: "Solicitado",
+        msg: this.msg,
+      };
+const dataJson = JSON.stringify(data);
+
+const req = await fetch("http://localhost:3001/burgers", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
   },
-  mounted(){
-    this.getIngredients()
-  }
+  body: dataJson,
+});
+const res = await req.json();
+console.log(res); 
+this.msg = 'pedido foi'
+this.nome = '';
+this.pao = '';
+this.carne = '';
+this.opcionais = [];
+this.msg = 'Pedido Realizado Com Sucesos';
+setTimeout(() => this.msg = '', 3000)
+ 
+    },
+  },
+  mounted() {
+    this.getIngredients();
+  },
+  components: {
+    MessageApp,
+  },
 };
 </script>
 <style scoped>
@@ -126,7 +161,7 @@ select {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .sbm-btn:hover {
   background-color: #fcba03;
