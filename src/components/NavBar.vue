@@ -3,7 +3,7 @@
      <div id="nav">
      <router-link to="/" id="logo-url"> <img :src="logo" :alt="alt" id="logo"/> </router-link>   
     <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <router-link to="/orders">Pedidos</router-link>
      </div>
 </template>
 <script>
